@@ -1,0 +1,199 @@
+<html lang="en">
+    <head>
+        <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+            <script src="http://code.jquery.com/jquery-1.10.2.js">
+            </script>
+            <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js">
+            </script>
+            <style>
+                *
+                 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+                {text-decoration:none;}
+body{background-image: url("images/Mexican art.jpg");}
+#navbar {
+  display: flex;
+    height: auto;
+justify-content: space-evenly;
+margin: 0;
+}
+
+li {
+    display: inline-flex;
+    border: solid 10px #fc6c85;
+    list-style: none;
+    background-color: #fc6c85;
+
+}
+#seasons {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#topics {
+    border: 1px blue solid;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.column1 {
+    flex:1;
+    order:1;
+}
+.column2 {
+    flex:2;
+    order:2;
+}
+.column3 {
+    flex:3;
+    order:3;
+}
+.column4 {
+    flex:1;
+    order:1;
+}
+.column5 {
+    flex:2;
+    order:2;
+}
+.column6 {
+    flex:3;
+    order:3;
+}
+
+.blog {
+    text-align: right;
+}
+a {
+    text-decoration: none;
+}
+            </style>
+            <script>
+                $(function() {
+    $( "#draggable" ).draggable();
+  });
+            </script>
+            <link href="style.css" rel="stylesheet">
+                <meta charset="utf-8">
+                    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                        <title>
+                            m6project
+                        </title>
+                    </meta>
+                </meta>
+            </link>
+        </link>
+    </head>
+    <body>
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <a href="file:///C:/Users/stefa/OneDrive/Desktop/Stefany/College/NorthWest%20Vista/Classes/IMED1316%20-%20Web%20Design/m6sublime/index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/stefa/OneDrive/Desktop/Stefany/College/NorthWest%20Vista/Classes/IMED1316%20-%20Web%20Design/m6sublime/content.html">
+                        Content
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/stefa/OneDrive/Desktop/Stefany/College/NorthWest%20Vista/Classes/IMED1316%20-%20Web%20Design/m6sublime/contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="podcast">
+            Podcast
+        </h1>
+        <container id="seasons">
+            <div>
+                Season 1
+                <img class="images" src="images/Spring.jpeg">
+                </img>
+            </div>
+            <div>
+                Season 2
+                <img class="images" src="images/Summer.jpeg">
+                </img>
+            </div>
+            <div>
+                Season 3
+                <img class="images" src="images/Fall.jpeg">
+                </img>
+            </div>
+            <div>
+                Season 4
+                <img class="images" src="images/Winter.jpg">
+                </img>
+            </div>
+        </container>
+        <h1 class="blog">
+            Blog
+        </h1>
+        <h3>
+            Topics
+        </h3>
+        <container id="topics">
+            <div class="column 1">
+                <a href="">
+                    Nutrition
+                </a>
+            </div>
+            <div class="column 2">
+                <a href="">
+                    Fitness
+                </a>
+            </div>
+            <div class="column 3">
+                <a href="">
+                    Mental Health
+                </a>
+            </div>
+            <div class="column 4">
+                <a href="">
+                    Health Tips
+                </a>
+            </div>
+            <div class="column 5">
+                <a href="">
+                    Beauty
+                </a>
+            </div>
+            <div class="column 6">
+                <a href="">
+                    Lifestyle
+                </a>
+            </div>
+        </container>
+        <div class="ui-widget-content" id="draggable">
+            <p>
+                I am draggable!
+            </p>
+        </div>
+    </body>
+</html>
